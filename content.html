@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartMedCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h2>SmartMedCare</h2>
+        <div class="features">
+          <a href="https://www.practo.com/doctors?utm_source=corecard&utm_medium=referral&utm_campaign=practohomepage">Find Doctor
+
+          </a> <a href="./chatbot/bot.html">Dr.Bot</a> 
+          <a href="./aboutUs.html">About Us</a>
+        </div>
+        <div class="user">
+          <i
+            onclick="myFunction()"
+            id="theme"
+            class="fa-solid fa-lightbulb"
+          ></i>
+
+          <h3><i class="fa-regular fa-user"></i></h3>
+        </div>
+      </nav>
+
+      <div class="quote-box">
+        <h1>
+          Your Health <br />
+          is our Priority
+        </h1>
+        <div class="time">
+          <h3 id="time">time</h3>
+          <div id="fulldate">
+            <h3 id="date">date</h3>
+            -
+            <h3 id="month">month</h3>
+            -
+            <h3 id="year">year</h3>
+          </div>
+          <h3 id="day">day</h3>
+        </div>
+      </div>
+
+      <div class="page1">
+        <div class="page1a">
+          <a href="https://www.practo.com/doctors?utm_source=corecard&utm_medium=referral&utm_campaign=practohomepage"><div class="box">Find Doctor</div></a>
+          <a href="./chatbot/bot.html"><div class="box">Chat w/d Dr.Bot</div></a>  
+          <a href="#page2"><div class="box">Contact Us</div></a>
+        </div>
+
+        <div class="page1b">
+          <div class="intro">
+            <h4>About Project</h4>
+            <h1>Introduction of the Project</h1>
+            <p>
+              AI-Integrated Healthcare Solution In today's fast-paced world,
+              access to reliable healthcare services is essential.
+              <b>SmartMedCare</b> is an innovative AI-powered healthcare
+              platform designed to provide instant medical assistance,
+              prevention tips, and health-related guidance. This project
+              integrates <b>Artificial Intelligence (AI)</b> to enhance patient
+              care by offering automated solutions, symptom analysis, and
+              preventive healthcare recommendations. By leveraging AI,
+              SmartMedCare aims to: - <b>Improve accessibility</b> to healthcare
+              information. - <b>Assist patients</b> with real-time chatbot
+              interactions for medical inquiries. -
+              <b>Provide preventive tips</b> for maintaining a healthy
+              lifestyle. - <b>Enhance efficiency</b> by reducing dependency on
+              direct human intervention for basic healthcare guidance. With the
+              integration of <b>OpenAI's chatbot</b>, SmartMedCare ensures that
+              users receive intelligent, personalized, and accurate responses to
+              their health-related concerns, making healthcare more accessible
+              and convenient.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="page2">
+        <div class="page2a">
+          <div class="article">
+            <h3>Top Articles from Health Experts</h3>
+
+            <a href="https://www.medicalnewstoday.com/"
+              ><button>See all Articles</button></a
+            >
+          </div>
+
+          <div class="article">
+            <div class="img-box">
+              <img src="./481c31f7fb1aa0fbaf1d9e623cf7a279.jpg" alt="" />
+            </div>
+            <h5><b>HMVP Virus</b></h5>
+            <p>
+              Human metapneumovirus (hMPV) is one of the viruses that causes the
+              common cold (upper respiratory infection). It usually makes people
+              only mildly sick, but it can make some people very sick.
+            </p>
+          </div>
+          <div class="article">
+            <div class="img-box">
+              <img src="./9a0c8c33482bfac766e45eef1fa92181.jpg" alt="" />
+            </div>
+            <h5><b>Coronavirus</b></h5>
+            <p>
+              The virus is transmitted through direct contact with respiratory
+              droplets of an infected person (generated through coughing and
+              sneezing), and touching surfaces contaminated with the virus. The
+              COVID-19 virus may survive on surfaces for several hours, but
+              simple disinfectants can kill it.
+            </p>
+          </div>
+        </div>
+
+        <div class="page2b">
+
+          
+          
+            <!-- Footer with Contact Form -->
+            <footer>
+              <h2>Contact Us</h2>
+              <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+              </form>
+              <div id="confirmation" style="display:none; margin-top: 15px;">
+                <p>Thank you for reaching out! We'll get back to you soon.</p>
+              </div>
+            </footer>
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  /* background-color: #567daa; */
+  background-color: rgb(160, 76, 239);
+  /* background-color: rgb(28, 28, 49); */
+  color: #fbfbfb;
+  font-family: "Manrope", serif;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 2vw;
+}
+
+.features {
+  display: flex;
+  gap: 15px;
+}
+
+.features a {
+  text-decoration: none;
+  color: #fbfbfb;
+}
+
+#fulldate {
+  display: flex;
+}
+
+.quote-box {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+}
+
+.quote-box h1 {
+  font-size: 4vw;
+  line-height: 60px;
+}
+
+.quote-box .time {
+  height: 100%;
+  width: 15%;
+  /* background-color: red; */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  display: flex;
+  gap: 1vw;
+}
+
+#theme {
+  padding: 5px 5px;
+  border: none;
+}
+
+.new-color {
+  background-color: rgb(17, 134, 128);
+}
+
+.page1 {
+  height: 150vh;
+  width: 95vw;
+  margin: 0vh 2vw;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.page1a {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./c1baab9a9fc4d84b6aee9e3dd845ac90.gif");
+  background-size: cover;
+  gap: 5vw;
+}
+
+.page1a a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page1a .box {
+  position: relative;
+  top: 30%;
+  height: 13vh;
+  width: 25vw;
+  color: black;
+  background-color: rgba(240, 248, 255, 0.596);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+}
+
+.page1b {
+  height: 60%;
+  border-radius: 30px;
+  /* background-color: darkred; */
+  background-color: rgb(25, 25, 25);
+}
+
+.page1b .intro {
+  padding: 5vh 3vw;
+}
+
+.page1b .intro h1 {
+  font-size: 4vw;
+}
+
+.page1b .intro h3 {
+  padding: 2vh 5vw;
+  font-size: 1vw;
+}
+
+.page2 {
+  height: 120vh;
+  width: 95vw;
+  margin: 0vh 2vw;
+  overflow: hidden;
+}
+
+.page2a {
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkblue;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  gap: 3vw;
+}
+
+.article {
+  height: 45vh;
+  width: 25vw;
+  /* background-color: orange; */
+}
+
+.article h3 {
+  font-size: 4vw;
+  line-height: 60px;
+}
+
+.article h5 {
+  font-size: 1.2vw;
+  padding-top: 7px;
+}
+
+.article p {
+  font-size: 0.9vw;
+}
+
+.article button {
+  margin: 3vh 0vw;
+  padding: 15px 30px;
+  font-family: "Manrope", serif;
+}
+
+.article .img-box {
+  height: 60%;
+  background-color: red;
+}
+
+.article .img-box img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.page2b {
+  background-color: black;
+  height: 53%;
+  margin-bottom: 1vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+@media (max-width: 1024px) {
+  .quote-box {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .quote-box h1 {
+    font-size: 6vw;
+  }
+
+  .quote-box .time {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .page1a {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .page1a .box {
+    width: 60%;
+    height: 10vh;
+  }
+
+  .page1b .intro h1 {
+    font-size: 6vw;
+  }
+
+  .page1b .intro h3 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .article {
+    width: 40%;
+  }
+
+  .article h3 {
+    font-size: 5vw;
+  }
+
+  .article h5 {
+    font-size: 1rem;
+  }
+
+  .article p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .user {
+    margin-top: 1rem;
+  }
+
+  .page1 {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .page1a .box {
+    width: 80%;
+    height: 10vh;
+  }
+
+  .page2a {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .article h3 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-box h1 {
+    font-size: 8vw;
+  }
+
+  .page1a .box {
+    width: 90%;
+    height: 12vh;
+  }
+
+  .page1b .intro h1 {
+    font-size: 7vw;
+  }
+
+  .article h5 {
+    font-size: 1rem;
+  }
+
+  .article p {
+    font-size: 0.9rem;
+  }
+
+  .article button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .features a {
+    font-size: 0.9rem;
+  }
+
+  .page2b {
+    height: auto;
+  }
+}
+
+footer {
+  overflow: hidden;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+footer h2 {
+  margin-bottom: 15px;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer input,
+footer textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+footer button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #f4f5f6;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer button:hover {
+  background: #c1c6cc;
+}

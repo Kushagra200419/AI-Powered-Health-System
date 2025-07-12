@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Manrope", serif;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      color: whitesmoke;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3vw;
+      margin: 2vh;
+      font-family: "Manrope", serif;
+    }
+
+    .mem {
+      height: 27vh;
+      width: 75%;
+      border: 2px whitesmoke solid;
+      display: flex;
+    }
+
+    .photo {
+      height: inherit;
+      width: 17%;
+      border: 2px whitesmoke solid;
+    }
+
+    .photo img {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    .info {
+      width: 60%;
+      height: inherit;
+      font-size: 1.6vw;
+      padding: 2vh 2vw;
+    }
+  </style>
+
+  <body>
+    <h1>About Us</h1>
+
+    <div class="box">
+      <div class="mem">
+        <div class="photo">
+          <img src="./kushagraGond.jpg" alt="Kushagra Gond" />
+        </div>
+        <div class="info">
+          Name: Kushagra Gond (202210101310088) <br />
+          From Siddharth Nagar and currently pursuing Bachelor’s of Computer
+          applications from Shri Ramswaroop Memorial University, Deva Road
+          Lucknow. And specialized in UX/UI, React.js etc.
+        </div>
+      </div>
+
+      <div class="mem">
+        <div class="photo"><img src="./aman yadav.jpg" alt="Aman Yadav" /></div>
+        <div class="info">
+          Name: Aman Yadav (202210101310069) <br />
+          From Lucknow and currently pursuing Bachelor’s of Computer
+          Applications from Shri Ramswaroop Memorial University, Deva Road
+          Lucknow. And specialized in Frontend and software development.
+        </div>
+      </div>
+
+      <div class="mem">
+        <div class="photo">
+          <img src="./kushagra verma.jpg" alt="Kushagra Verma" />
+        </div>
+        <div class="info">
+          Name: Kushagra Verma (202210101310070) <br />
+          From Lucknow and currently pursuing Bachelor’s of Computer
+          Applications from Shri Ramswaroop Memorial University, Deva Road
+          Lucknow. And specialized in Cyber security and networking.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
